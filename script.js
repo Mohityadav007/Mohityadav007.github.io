@@ -37,6 +37,8 @@ $(document).ready(function () {
       emailjs.sendForm("service_ivq121a", "template_y7sw4qk", this).then(
         function () {
           console.log("SUCCESS!");
+          document.querySelector(".contact-us-inner-container").innerHTML =
+            "<p>Thanks for contacting us! We will get back to you soon!</p>";
         },
         function (error) {
           console.log("FAILED...", error);
