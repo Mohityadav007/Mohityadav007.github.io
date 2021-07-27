@@ -37,7 +37,10 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#individual-courses-section">Courses</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Courses
@@ -53,7 +56,7 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Web Development</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">Practice</a>
             </li>
@@ -79,14 +82,44 @@
             <div class="display-5 mb-3">
               Learn. Code. Practice.
             </div>
-            <button class="btn__cta">
-              Enroll Now
-            </button>
+            <a class="enroll-btn" href="#contact-us-section">
+              <button class="btn__cta">Enroll Now</button>
+            </a>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="video-thumbnail-container">
-            <img class="video-thumbnail" src="./images/elon.png" alt="video thumbnail">
+          <div class="top-right-container">
+            <div class="video-thumbnail-container">
+              <img class="video-thumbnail" src="./images/elon.png" alt="video thumbnail">
+              <img class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                src="./images/icons/youtube.png" alt="play youtube video">
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+              </button> -->
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+
+          <!-- Youtube Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Elon Musk talking about education</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/STt0dpgn900" title="YouTube video"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -177,7 +210,7 @@
     </div>
   </section>
 
-  <section class="individual-courses-section px-3 px-md-5 py-5">
+  <section id="individual-courses-section" class="individual-courses-section px-3 px-md-5 py-5">
     <div class="container">
       <div class="section-heading-container">
         <h2 class="section-heading mb-4">Individual Courses</h2>
@@ -377,7 +410,7 @@
   </section>
 
 
-  <section class="contact-us-section p-5">
+  <section id="contact-us-section" class="contact-us-section p-5">
     <div class="container">
       <div class="section-heading-container">
         <h2 class="section-heading mb-4">
